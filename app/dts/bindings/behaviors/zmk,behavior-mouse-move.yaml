@@ -1,0 +1,21 @@
+description: Mouse move
+
+compatible: "zmk,behavior-mouse-move"
+
+include: one_param.yaml
+
+properties:
+  x-code:
+    type: int
+    required: true
+  y-code:
+    type: int
+    required: true
+  delay-ms:
+    type: int
+  time-to-max-speed-ms:
+    type: int
+    required: true
+  acceleration-exponent:
+    type: int
+    default: 1
